@@ -1,6 +1,6 @@
 class Solution{
 	public static void main(String[] args){
-		System.out.println(numJewelsInStones("ab","AaBBBBBbbc"));
+		System.out.println(numJewelsInStones("ABbcd","AaBBBBBbbc"));
 	}
 
 	public static int numJewelsInStones(String J, String S){
@@ -13,10 +13,7 @@ class Solution{
 					cnt = cnt + 1;
 				}
 			}
-
 		}
-
 		return cnt;
-
 	}
 }
