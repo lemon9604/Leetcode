@@ -1,11 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-
-class Test{
-	public static void main(String[] args){
-		System.out.println(functionname(1,0));
-	}
-	public static int functionname(int x, int y){
+public static int HammingDistance(int x, int y){
 		int cnt = 0;
 		int x_tail, y_tail;
 		if (x <= y){
@@ -27,9 +20,6 @@ class Test{
 				cnt ++;
 			}
 			x = x / 2;
-			
 		}
 		return cnt;
 	}
-}
-
