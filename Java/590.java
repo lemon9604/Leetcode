@@ -1,11 +1,13 @@
-590. N-ary Tree Postorder Traversal
+590. N-arry Tree Postorder Traversal
 public List<Integer> step(List<Integer> raw, Node root){
-	if (root.children != null){
-		for (Node child: root.children){
-			raw = step(raw, child);
+	if (root != null){
+		if (root.children != null){
+			for (Node child: root.children){
+				raw = step(raw, child);
+			}
 		}
+		raw.add(root.val);
 	}
-	raw.add(root.val);
 	return raw;
 }
 public List<Integer> postorder(Node root){
